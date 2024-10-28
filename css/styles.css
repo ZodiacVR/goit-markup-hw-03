@@ -1,3 +1,21 @@
+:root {
+  --iris: #4d5ae5;
+  --ocean: #404bbf;
+  --navy-blue: #2e2f42;
+  --green: #31d0aa;
+  --slate: #434455;
+  --light-slate: #8e8f99;
+  --cornflower: #e7e9fc;
+  --cloud: #f4f4fd;
+  --navy-blue-modal: rgba(46, 47, 66, 0.4);
+  --grey: rgba(46, 47, 66, 0.7);
+  --white: #fff;
+  --dairy: #fcfcfc;
+}
+:root {
+  --font-family: "Roboto", sans-serif;
+  --second-family: "Raleway", sans-serif;
+}
 .logo:hover {
   color: #404bbf;
 }
@@ -9,16 +27,23 @@
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  display: inline-block;
+  margin-right: 76px;
+  margin-left: 156px;
 }
 .logo-head {
   color: #2e2f42;
 }
 .site-nav {
   color: #434455;
+  display: flex;
+  gap: 40px;
 }
 .link {
   color: #2e2f42;
   font-weight: 500;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .link:hover {
   color: #404bbf;
@@ -28,9 +53,19 @@
 }
 .links {
   font-style: normal;
+  margin-left: auto;
+  padding-left: 332px;
+}
+.site-cont {
+  display: flex;
+  gap: 40px;
+  padding-left: 332px;
 }
 .link-cont {
   color: #434455;
+  display: inline-block;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .link-cont:focus {
   color: #404bbf;
@@ -55,6 +90,8 @@
   line-height: 1.07;
   text-align: center;
   color: white;
+  max-width: 496px;
+  margin: auto auto 48px;
 }
 /*h2*/
 .title-filling {
@@ -76,6 +113,7 @@
 }
 .title {
   background-color: #2e2f42;
+  padding: 188px;
 }
 .button {
   font-family: "Roboto", sans-serif;
@@ -86,6 +124,13 @@
   color: white;
   background-color: #4d5ae5;
   cursor: pointer;
+  border-radius: 4px;
+  padding: 16px 32px;
+  border: none;
+  display: block;
+  margin: auto;
+  min-width: 169px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .button:hover {
   background-color: #404bbf;
@@ -154,13 +199,53 @@
   line-height: 1.5;
   color: #f4f4fd;
   letter-spacing: 0.02em;
+  padding-left: 156px;
 }
 .footer {
   background-color: #2e2f42;
+  padding: 100px 0;
+}
+.header {
+  border-bottom: 1px solid #e7e9fc;
+  display: flex;
+  align-items: center;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.container-title {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0;
 }
 a {
   text-decoration: none;
 }
 ul {
   list-style: none;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+.Mark .Tom .Camila .Daniel {
+  box-sizing: border-box;
+  height: 260px;
+  padding-left: 24px;
+}
+.Banking .Cashless .Meditation .Taxi .Screen .Courses {
+  box-sizing: border-box;
+  height: 300;
+  padding-left: 24px;
 }
