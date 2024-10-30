@@ -14,7 +14,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -64,7 +64,7 @@ img {
 .container {
   width: 1158px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 15px 0 15px;
 }
 
 .header {
@@ -84,7 +84,7 @@ img {
 
 .logo-title {
   color: #4d5ae5;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.17;
@@ -182,6 +182,18 @@ img {
 .title-button:focus {
   background-color: #404bbf;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .stuffing-sect {
   padding: 120px 0;
 }
@@ -199,7 +211,10 @@ img {
 }
 
 .stuf {
-  width: 264px;
+  width: calc((100% - 72px) / 4);
+  /*or width calc((100% - 3 * 24px) / 4) 
+    or flex-basis: calc((100% - 3 * 24px) / 4)
+    or flex-basis: calc((100% - 72px) / 4))*/
 }
 .stuffing {
   letter-spacing: 0.02em;
@@ -236,6 +251,10 @@ img {
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: #fff;
   border-radius: 0px 0px 4px 4px;
+  width: calc((100% - 72px) / 4);
+  /*or width calc((100% - 3 * 24px) / 4) 
+    or flex-basis: calc((100% - 3 * 24px) / 4)
+    or flex-basis: calc((100% - 72px) / 4))*/
 }
 
 .team-wrapper {
@@ -279,6 +298,9 @@ img {
   flex-wrap: wrap;
   gap: 48px 24px;
 }
+.portfolio-item {
+  width: calc((100% - 48px) / 3);
+}
 
 .portfolio-wrapper {
   border: 1px solid #e7e9fc;
@@ -286,6 +308,7 @@ img {
   padding: 32px 16px;
   width: 360px;
   height: 120px;
+  margin-bottom: 8px;
 }
 
 .portfolio-title {
@@ -310,9 +333,9 @@ img {
   padding: 100px 0;
 }
 
-.footer__logo-blue {
+.logo-footer {
   color: #4d5ae5;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.16667;
