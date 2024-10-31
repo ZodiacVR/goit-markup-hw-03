@@ -303,11 +303,13 @@ img {
   width: calc((100% - 48px) / 3);
 }
 .portfolio-wrapper-conteiner {
+  padding: 32px 16px;
+  border-top: none;
+  border: 1px solid #e7e9fc;
 }
 .portfolio-wrapper {
   padding: 32px 16px;
   border-top: none;
-  border: 1px solid #e7e9fc;
 }
 
 .portfolio-title {
